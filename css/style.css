@@ -1,0 +1,891 @@
+/*+-----------------------------------------------------------+
+  |                                                           |
+  |    Template Name: Syrah - Wine Shop Html Template         |
+  |    Author: themesitem                                     |
+  |    Author Email: themesitem.cit@gmail.com                 |
+  |    Version: 1.00                                          |
+  |                                                           |
+  +-----------------------------------------------------------+*/
+
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. Index Page 
+        |----> Header css
+        |----> Sticky header css
+        |----> Banner Css
+        |----> About Css
+        |----> Product Css
+        |----> Event Css
+        |----> Offer Css
+        |----> Updates Css
+        |----> Footer Css
+        |----> Copyright Css
+3. Our Story Page
+        |----> Inner Page Title css
+        |----> About Part css
+        |----> Achievement Css
+4. Our Product Page
+5. Contact page
+        |----> Left img css
+        |----> Contact-form Css
+6. Error404 Page
+7. Blog-Details
+*/
+
+
+/*===========================
+    1. Theme default css 
+===========================*/
+
+
+/* Google Fonts Css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    vertical-align: middle;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+span,
+a {
+    display: inline-block;
+}
+
+a,
+button {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #003059;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #999999;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*== All Button Style ==*/
+
+.theme_btn {
+    background: var(--themecolor);
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.theme_btn:hover {
+    box-shadow: var(--shadow);
+    color: var(--white);
+}
+
+.bg_cover {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --themecolor: #37474F;
+    --white: #ffffff;
+    --black: #000000;
+    --text-themeColor: #7094B1;
+    --shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    --shadow2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/*== All section title here ==*/
+
+
+/* one-side-border title */
+
+.section_title {}
+
+.section_title h2 {
+    position: relative;
+    display: inline;
+    font-size: 40px;
+}
+
+.section_title h2::before,
+.section_title h2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background: var(--text-themeColor);
+    left: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.section_title h2::before {
+    top: 0;
+}
+
+.section_title h2::after {
+    bottom: 0;
+}
+
+.section_title p {
+    font-size: 20px;
+    display: block;
+    margin-top: 25px;
+}
+
+.section_title.text-center p {
+    padding: 0 228px;
+}
+
+
+/*===========================
+    Index Page Css Start 
+===========================*/
+
+
+/*===========================
+    HEADER CSS 
+===========================*/
+
+
+/* manubar */
+
+.header_area {
+    background: var(--themecolor);
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--white);
+    font-size: 29px;
+    font-weight: 500;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar .navbar-collapse {}
+
+.navbar .navbar-collapse .navbar-nav {}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-family: 'Poppins';
+    color: var(--white);
+    padding: 25px 0 25px 0;
+    margin-left: 25px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item.dropdown {}
+
+.navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-toggle {}
+
+.navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {}
+
+.navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {}
+
+.navbar .navbar-collapse .conversa {
+    margin-left: 25px;
+    position: relative;
+}
+
+.navbar .navbar-collapse .conversa:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 79%;
+    left: -12px;
+    background: #fff;
+    top: 6px;
+    opacity: .7;
+}
+
+.navbar .navbar-collapse .conversa span {
+    display: inline;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.navbar .navbar-collapse .conversa p {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar .navbar-collapse .conversa a {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    opacity: .7;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.navbar .navbar-collapse .conversa a:hover {
+    opacity: 1;
+}
+
+
+/* toggle icon */
+
+.navbar .navbar-toggler .icon_bar {
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin: 5px 0;
+}
+
+
+/*===========================
+     EXPEND HEADER CSS 
+=============================*/
+
+.header_area .open {
+    font-size: 22px;
+    background: transparent;
+    border: 0;
+}
+
+.header_area .toggle_navbar {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    background: #1b1740;
+    text-align: left;
+}
+
+.header_area .toggle_navbar .navbar-nav {
+    padding-top: 50px;
+}
+
+.toggle_navbar .navbar-nav .nav-item {
+    padding: 15px;
+    padding-left: 25px;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown {}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
+    right: 25px;
+    position: absolute;
+    top: 50%;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    background: #28235d;
+    width: 93%;
+    padding: 15px 0px;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    padding: 15px 1.5rem;
+    color: #ffffff;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background: #6baac1;
+}
+
+.header_area .toggle_navbar .navbar-nav .nav-item:hover {
+    background: #6baac1;
+}
+
+.header_area .toggle_navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header_area .toggle_navbar .close {
+    position: absolute;
+    color: #1b1740;
+    right: 15px;
+    top: 15px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.header_area .toggle_navbar.show {
+    display: block;
+}
+
+
+/*===========================
+     STICKY HEADER CSS 
+=============================*/
+
+
+/*
+.header_area.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999999;
+	box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.header_area.sticky .navbar {
+	background: #1D2228;
+	animation: stickyani 8s;
+	-webkit-animation: stickyani 2s;
+	position: absolute;
+	padding-top: 0;
+}
+
+
+@keyframes stickyani {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+*/
+
+
+/*===========================
+    BANNER CSS 
+===========================*/
+
+.banner_area {
+    position: relative;
+}
+
+.banner_area::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.61);
+}
+
+.banner_area .banner_text {
+    padding-top: 130px;
+    padding-bottom: 258px;
+}
+
+.banner_area .banner_text h1 {
+    font-size: 61px;
+    padding-right: 211px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.banner_area .btn_warp {
+    position: absolute;
+    top: 51.5%;
+    left: 0;
+    background: var(--themecolor);
+    width: 54%;
+    text-align: end;
+}
+
+.banner_area .btn_warp .banner_btn {
+    color: var(--white);
+    background: var(--text-themeColor);
+    padding: 15px 35px;
+    font-size: 22px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.banner_area .btn_warp .banner_btn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+/*===========================
+    ABOUT US PART CSS START
+===========================*/
+
+.about_us {}
+
+.about_us .section_info {}
+
+.about_us .section_info p {}
+
+.about_us .section_info p span {
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.about_us .section_info a {
+    margin-top: 10px;
+}
+
+.about_us .about_img {
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.about_us:hover .section_title h2::before,
+.about_us:hover .section_title h2::after {
+    width: 100%;
+    height: 2px;
+}
+
+
+/*===========================
+	Our Expertise CSS 
+===========================*/
+
+.expertise {}
+
+.expertise .section_info {}
+
+.section_info .single_expertise {
+    position: relative;
+}
+
+.section_info .single_expertise .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0006;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.section_info .single_expertise .overlay .icon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.section_info .single_expertise .overlay .text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 40%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.section_info .single_expertise .overlay:hover .text {
+    background: var(--themecolor);
+}
+
+.section_info .single_expertise .overlay .text:hover {
+    box-shadow: var(--shadow2);
+}
+
+.section_info .single_expertise .overlay .text h5 {
+    font-size: 30px;
+    color: var(--white);
+    opacity: 0.2;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    margin-bottom: 0;
+}
+
+.section_info .single_expertise .overlay:hover .text h5 {
+    opacity: 1;
+}
+
+.section_info .single_expertise .overlay .text span {
+    color: var(--white);
+    opacity: 0.2;
+    transition: all .3s ease;
+}
+
+.section_info .single_expertise .overlay:hover .text span {
+    opacity: 1;
+}
+
+.expertise:hover .section_title h2::before,
+.expertise:hover .section_title h2::after {
+    width: 100%;
+    height: 2px;
+}
+
+
+/*===========================
+	Our Communit CSS 
+===========================*/
+
+.community {
+    background: #F3F4F5;
+}
+
+.community .section_info {}
+
+.community .section_info p {}
+
+.community .section_info p span {
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.community .section_info.right {
+    margin-bottom: 45px;
+}
+
+.community .section_info.right .smal_blog {
+    height: 100%;
+}
+
+.community .section_info.right .smal_blog a {
+    display: inline;
+    color: var(--black);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.community .section_info.right .smal_blog a:hover {
+    text-decoration: underline;
+}
+
+.community .section_info.right .smal_blog .image {
+    width: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    height: 55px;
+    float: left;
+}
+
+.community .section_info.right .smal_blog .image img {
+    height: 55px;
+}
+
+.community:hover .section_title h2::before,
+.community:hover .section_title h2::after {
+    width: 100%;
+    height: 2px;
+}
+
+
+/*===========================
+    Testimonial PART CSS 
+===========================*/
+
+.testimonial {}
+
+.testimonial .testimonial_slider {
+    display: flex;
+    margin-top: 70px;
+}
+
+.testimonial_slider .author_details {
+    text-align: center;
+    width: 25%;
+}
+
+.testimonial_slider .author_details .image {
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.testimonial_slider .author_details h5 {}
+
+.testimonial_slider .author_details span {}
+
+.testimonial_slider .content {
+    width: 75%;
+}
+
+.testimonial_slider .content p {
+    font-size: 22px;
+}
+
+.testimonial .slider_dots {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.testimonial .slider_dots ul {}
+
+.testimonial .slider_dots ul li {
+    display: inline-block;
+}
+
+.testimonial .slider_dots ul li button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--themecolor);
+    border-radius: 50%;
+    background: var(--text-themeColor);
+}
+
+.testimonial .slider_dots ul li.active button {
+    border: 2px solid transparent;
+    background: var(--text-themeColor);
+}
+
+.testimonial .section_title {
+    margin-top: 80px;
+}
+
+.testimonial:hover .section_title h2::before,
+.testimonial:hover .section_title h2::after {
+    width: 100%;
+    height: 2px;
+}
+
+
+/*===========================
+    FOOTER-PART CSS 
+===========================*/
+
+footer {
+    background: #111;
+}
+
+footer .footer_logo {
+    padding-bottom: 40px;
+}
+
+footer .footer_logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer_nav {
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer_nav::before,
+.footer_nav::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #dddddd;
+}
+
+.footer_nav::before {
+    top: 0;
+    left: 0;
+}
+
+.footer_nav::after {
+    bottom: 0;
+    left: 0;
+}
+
+.footer_nav ul {}
+
+.footer_nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer_nav ul li a {
+    color: white;
+}
+
+.footer_social_links {
+    padding: 30px 0;
+}
+
+.footer_social_links ul {}
+
+.footer_social_links ul li {
+    display: inline-block;
+    padding: 0 18px;
+}
+
+.footer_social_links ul li a {
+    width: 32px;
+    height: 32px;
+    background: #ffffff5c;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/* ========================================================== */
+
+
+/* 			                02. FOOTER                        */
+
+
+/* ========================================================== */
+
+
+/*===========================
+    COPYRIGHT-PART CSS 
+===========================*/
+
+
+/* =========================----- Back-to-top button css -----====================== */
+
+.back_to_top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: #1D2228;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.back_to_top:hover {
+    background: #cf851e;
+    color: #fff;
+}

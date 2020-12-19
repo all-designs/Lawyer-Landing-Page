@@ -1,0 +1,97 @@
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    /*======================
+    Index Page Css
+========================*/
+}
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*======================
+    Index Page Css
+========================*/
+}
+
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .section_info .single_expertise .overlay .text {
+        padding: 0px;
+        padding-top: 00px;
+    }
+    .section_title.text-center p {
+        padding: 0;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .section_title.text-center p {
+        padding: 0;
+    }
+    .banner_area .banner_text h1 {
+        font-size: 28px;
+        padding-right: 0px;
+    }
+    .about_us .section_info a {
+        margin-bottom: 20px;
+    }
+    .community {
+        text-align: center;
+    }
+    .testimonial .testimonial_slider {
+        display: unset;
+    }
+    .testimonial_slider .author_details {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .testimonial_slider .content {
+        width: 100%;
+    }
+    .footer_nav ul li {
+        padding: 5px 10px;
+    }
+    .footer_social_links ul li {
+        display: inline-block;
+        padding: 0 8px;
+    }
+}
+
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 575.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .section_title.text-center p {
+        padding: 0;
+    }
+    .banner_area .banner_text h1 {
+        font-size: 22px;
+        padding-right: 0px;
+    }
+    .about_us .section_info a {
+        margin-bottom: 20px;
+    }
+    .community {
+        text-align: center;
+    }
+    .footer_nav ul li {
+        padding: 0 5px;
+    }
+}
